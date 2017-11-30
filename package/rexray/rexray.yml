@@ -1,0 +1,16 @@
+rexray:
+  loglevel: warn
+libstorage:
+  service: rbd
+  integration:
+    volume:
+      operations:
+        create:
+          default:
+            fsType: ext4
+        mount:
+          preempt: true
+  server:
+    services:
+      rbd:
+        driver: rbd
