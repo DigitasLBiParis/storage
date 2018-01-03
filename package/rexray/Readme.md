@@ -1,6 +1,6 @@
-## Rancher NFSv4 Volume Plugin Driver
+## Rancher RexRay Volume Plugin Driver
 
-### NFS plugin driver is a bash script and invocation commands are:
+### RexRay plugin driver is a bash script and invocation commands are:
 
 Create:
 ```

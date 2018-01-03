@@ -1,0 +1,19 @@
+version: '2'
+services:
+  rexray:
+    privileged: true
+    image: dockerhub.sandbox.pfex.digitas.fr/pfex/rancher-rexray
+    environment:
+      MDM_IP: ''
+      STACK_NAME: ''
+      SYSTEM_ID: ''
+    stdin_open: true
+    network_mode: host
+    volumes:
+    - /dev:/dev
+    - /etc/ceph:/etc/ceph
+    - /var/lib/rexray
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.container.dns: 'true'
